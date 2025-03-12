@@ -1,12 +1,56 @@
-# React + Vite
+# Dynamic Form Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a **Dynamic Form Builder** application built using **React.js**, **Redux Toolkit**, and **React Hook Form**. The application allows users to dynamically create, manage, and validate forms with various field types and conditional logic.
 
-Currently, two official plugins are available:
+## Features
+- **Dynamic Field Selection:** Users can add fields at runtime, including:
+  - Text Field
+  - Dropdown
+  - Radio Button
+  - File Upload
+  - Checkbox
+  - Country Selector (Supports multiple country phone formats)
+  - Date Picker
+  - Phone Number (Supports multi-country formats)
+- **Real-Time Validation:** Custom validation is applied as data is entered.
+- **Nested Fields and Sections:** Users can organize fields into sections and create sub-sections.
+- **Conditional Logic:** Fields and sections can be shown or hidden based on user input.
+- **Data Display:** Entered data is displayed in a hierarchical structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **React.js** (Frontend Framework)
+- **Redux Toolkit** (State Management)
+- **React Hook Form** (Form Handling & Validation)
+- **Tailwind CSS** (Styling)
 
-## Expanding the ESLint configuration
+## Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dynamic-form-builder.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd dynamic-form-builder
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm start
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+- Add form fields dynamically.
+- Configure field validations and conditional logic.
+- Organize fields into sections and sub-sections.
+- View the structured data output.
+
+## Contributing
+Feel free to fork this project and contribute to its improvement. Create a pull request with your proposed changes.
+
+## License
+This project is licensed under the MIT License.
+
