@@ -5,7 +5,7 @@ import { addSection, deleteSection, addField, updateField, deleteField, updateSe
 import FormRenderer from './FormRenderer';
 import FormPreview from './FormPreview';
 
-const FIELD_TYPES = ['text', 'dropdown', 'radio', 'file', 'checkbox', 'country', 'date', 'phone'];
+const FIELD_TYPES = ['text', 'dropdown', 'radio', 'file', 'checkbox', 'date', 'phone'];
 
 const FormBuilder = () => {
   const dispatch = useDispatch();

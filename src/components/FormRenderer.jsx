@@ -79,7 +79,16 @@ const FormRenderer = ({ sections }) => {
               return <DatePicker selected={value} onChange={onChange} className={baseInputClasses} dateFormat="MMMM d, yyyy" />;
 
             case 'phone':
-              return <PhoneInput value={value} onChange={onChange} className={baseInputClasses} defaultCountry="US" />;
+              return  (
+                <PhoneInput
+                value={value}
+                onChange={onChange}
+                defaultCountry="PK" // Default country (Change as needed)
+                international // Ensures country code like +92 appears
+                countryCallingCodeEditable={false} // Prevents editing country code manually
+                className="border border-gray-300 rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              )
 
             default:
               return null;
